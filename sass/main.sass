@@ -1,0 +1,797 @@
+// Variables
+$bg: #292929
+$pink: #d3315a
+$grey: #a1a1a1
+
+// RESETS
+
+*
+	box-sizing: border-box
+	outline: none
+
+section
+	padding: 100px 0
+
+html, body
+	width: 100%
+	margin: 0
+	padding: 0
+
+body
+	font-family: "GP", sans-serif
+	overflow-x: hidden
+
+
+
+.button_border_none
+
+
+button, input
+	&:focus
+		outline: none
+
+a
+	text-decoration: none
+
+.button
+	color: $pink
+	display: inline-block
+	padding-bottom: 2px
+	border-bottom: 1px solid $pink
+	cursor: pointer
+	transition: color 0.1s, border-bottom 1s
+	&:hover
+		color: darken($pink, 8)
+		border-bottom: 1px solid blue
+
+.newBut
+	color: $pink
+	display: inline-block
+	padding-bottom: 2px
+	border-bottom: 1px solid $pink
+	cursor: pointer
+	transition: color 0.1s, border-bottom 1s
+	&:hover
+		color: darken($pink, 8)
+		border-bottom: 1px solid blue
+
+// +++++++++++++++++++++++++++++ HEADER ++++++++++++++++++++++++++++++++++++++
+
+
+.header
+	background: $bg url('../img/flowers.png') center top no-repeat
+	background-size: 90%
+	height: 100vh
+	padding-top: 30px
+	min-height: 850px
+	padding-bottom: 75px
+	border-bottom: 1px solid #4c4c4c
+	&_arrows
+		position: relative
+	&_prev
+		background: url('../img/prev.png') center no-repeat
+		height: 17px
+		width: 8px
+		position: absolute
+		top: 35px
+		left: -45px
+		cursor: pointer
+		transition: .3s
+		&:hover
+			background: url('../img/hoverPrev.png') center no-repeat
+	&_next
+		background: url('../img/next.png') center no-repeat
+		height: 17px
+		width: 8px
+		position: absolute
+		top: 35px
+		right: -45px
+		cursor: pointer
+		transition: .3s
+		&:hover
+			background: url('../img/hover.png') center no-repeat
+	&_delivery
+		color: $grey
+		width: 138px
+		font-size: 12px
+		line-height: 1.4
+		margin-left: 10px
+		span
+			color: $pink
+			font-family: 'GPM', sans-serif
+	&_number
+		color: #fff
+		font-size: 20px
+		font-family: 'GPM', sans-serif
+		font-weight: 700
+		margin-bottom: 5px
+	&_call
+		color: $grey
+		font-size: 12px
+		font-family: 'GPM', sans-serif
+		margin-bottom: 15px
+	&_main
+		padding-top: 100px
+		color: #fff
+		text-align: center
+		h1
+			font-size: 34px
+			text-transform: uppercase
+			line-height: 1.4
+			margin-bottom: 20px
+	&_subtitle
+		color: #d3d3d3
+		text-transform: uppercase
+		width: 550px
+		line-height: 1.5
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 80px
+	&_slider
+		margin-bottom: 55px
+		width: 850px
+		margin-left: auto
+		margin-right: auto
+		&_item
+			margin-left: auto
+			margin-right: auto
+			&:focus
+				outline: none
+			img
+				width: 80px
+				max-height: 80px
+				margin-left: auto
+				margin-right: auto
+
+	&_exclusive
+		font-size: 28px
+		text-transform: uppercase
+		font-family: 'GPL', sans-serif
+		span
+			font-family: 'GPM', sans-serif
+
+.bucket
+	padding: 30px 55px
+	border: none
+	background-color: $pink
+	color: #fff
+	text-transform: uppercase
+	font-family: 'GPM', sans-serif
+	cursor: pointer
+	letter-spacing: 1px
+	margin-top: 20px
+	&:hover
+		background-color: darken($pink, 10)
+
+.feedback
+	&_slider
+		margin-left: auto
+		margin-right: auto
+		width: 1000px
+	&_prev
+		width: 22px
+		height: 37px
+		background: url('../img/feedback_prev.png') center no-repeat
+		position: absolute
+		top: 0
+		left: -45px
+		top: 90px
+		cursor: pointer
+	&_next
+		width: 22px
+		height: 37px
+		background: url('../img/feedback_next.png') center no-repeat
+		position: absolute
+		top: 0
+		right: -45px
+		top: 90px
+		cursor: pointer
+	&_img
+		width: 220px
+		background: url('../img/feedback.png') center no-repeat
+		background-size: cover
+		height: 220px
+		border-radius: 50%
+		position: relative
+		z-index: 3
+		&::before
+			position: absolute
+			content: ' '
+			width: 100%
+			height: 100%
+			border-radius: 50%
+			background-image: radial-gradient(transparent, #222)
+			z-index: -2
+
+		p
+			font-size: 20px
+			color: #fed
+			text-shadow: 0 1px 4px #555
+			width: 160px
+			position: absolute
+			z-index: 200
+			top: 50%
+			margin-top: -20px
+			font-family: 'GPM', sans-serif
+			left: 50%
+			margin-left: -80px
+		span
+			z-index: 200
+			font-size: 20px
+			color: #fed
+			text-shadow: 0 1px 4px #555
+			position: absolute
+			top: 50%
+			margin-top: 5px
+			font-family: 'GPM', sans-serif
+			left: 50%
+			margin-left: -60px
+			width: 140px
+	&_img2
+		width: 220px
+		background: url('../img/feedback_beatu.jpg') center no-repeat
+		background-size: cover
+		height: 220px
+		border-radius: 50%
+		position: relative
+		z-index: 3
+		&::before
+			position: absolute
+			content: ' '
+			width: 100%
+			height: 100%
+			border-radius: 50%
+			background-image: radial-gradient(transparent, #222)
+			z-index: -2
+
+		p
+			font-size: 20px
+			color: #fed
+			text-shadow: 0 1px 4px #555
+			width: 160px
+			position: absolute
+			z-index: 200
+			top: 50%
+			margin-top: -20px
+			font-family: 'GPM', sans-serif
+			left: 50%
+			margin-left: -80px
+		span
+			z-index: 200
+			font-size: 20px
+			color: #fed
+			text-shadow: 0 1px 4px #555
+			position: absolute
+			top: 50%
+			margin-top: 5px
+			font-family: 'GPM', sans-serif
+			left: 50%
+			margin-left: -60px
+			width: 140px
+	&_img3
+		width: 220px
+		background: url('../img/feedback_beatu2.jpg') center no-repeat
+		background-size: cover
+		height: 220px
+		border-radius: 50%
+		position: relative
+		z-index: 3
+		&::before
+			position: absolute
+			content: ' '
+			width: 100%
+			height: 100%
+			border-radius: 50%
+			background-image: radial-gradient(transparent, #222)
+			z-index: -2
+
+		p
+			font-size: 20px
+			color: #fed
+			text-shadow: 0 1px 4px #555
+			width: 160px
+			position: absolute
+			z-index: 200
+			top: 50%
+			margin-top: -20px
+			font-family: 'GPM', sans-serif
+			left: 50%
+			margin-left: -80px
+		span
+			z-index: 200
+			font-size: 20px
+			color: #fed
+			text-shadow: 0 1px 4px #555
+			position: absolute
+			top: 50%
+			margin-top: 5px
+			font-family: 'GPM', sans-serif
+			left: 50%
+			margin-left: -60px
+			width: 140px
+
+	&_item
+		&:focus
+			outline: none
+	&_text
+		width: 490px
+		font-size: 18px
+		line-height: 1.4
+		cursor: text
+
+.feedback
+	background-color: $bg
+	border-bottom: 1px solid #4c4c4c
+	h2
+		margin: 0
+		padding: 0
+		margin-bottom: 80px
+		font-size: 30px
+		text-transform: uppercase
+	text-align: center
+	color: #fff
+	&_item
+		text-align: left
+		margin-bottom: 90px
+	&_features
+		img
+			max-height: 66px
+			margin-bottom: 30px
+		p
+			font-size: 20px
+			text-transform: uppercase
+			font-family: 'GPM', sans-serif
+			width: 250px
+			margin-left: auto
+			margin-right: auto
+
+.customize
+	background-color: $bg
+	color: #fff
+	text-align: center
+	h2
+		text-transform: uppercase
+		font-size: 30px
+		letter-spacing: 1px
+		margin-bottom: 20px
+		span
+			color: $pink
+	&_subtitle
+		font-size: 18px
+		margin-bottom: 80px
+	&_item
+		border: 3px solid #fff
+		padding: 30px 0
+		margin-bottom: 30px
+		p
+			font-size: 20px
+			text-transform: uppercase
+			margin-bottom: 15px
+		span
+			display: block
+
+	&_color
+		margin: 10px 5px
+		cursor: pointer
+		margin-bottom: 20px
+	&_minus
+		display: inline-block
+		vertical-align: middle
+		padding-right: 10px
+		cursor: pointer
+	&_plus
+		display: inline-block
+		vertical-align: middle
+		cursor: pointer
+		padding-left: 10px
+	&_counter
+		display: inline-block
+		vertical-align: middle
+		border: 3px solid #fff
+		padding: 5px
+	&_number
+		margin-bottom: 15px
+		span
+			margin-bottom: 10px
+	&_button
+		background-color: #f24841
+		text-transform: uppercase
+		color: #fff
+		font-size: 14px
+		font-family: 'GPM', sans-serif
+		display: block
+		text-align: center
+		width: 140px
+		margin-left: auto
+		margin-right: auto
+		padding: 15px 0
+		cursor: pointer
+		letter-spacing: 1px
+		margin-top: 20px
+		transition: .4s
+		&:hover
+			background-color: $pink
+			box-shadow: 0px 1px 8px $pink
+	&_link
+		display: block
+		margin-bottom: 40px
+		cursor: pointer
+		span
+			color: #f24841
+			padding-bottom: 4px
+			border-bottom: 1px solid #f24841
+			margin-right: 10px
+			&::selection
+				background-color: transparent
+
+.hidd
+	display: none
+
+.help
+	text-align: center
+	background-color: #000
+	color: #fff
+	h3
+		font-size: 30px
+		text-transform: uppercase
+		font-family: 'GPM', sans-serif
+	a
+
+		font-size: 30px
+		text-transform: uppercase
+		cursor: pointer
+		padding-bottom: 10px
+		border-bottom: 2px solid #fff
+		display: inline-block
+		margin-bottom: 25px
+		font-family: 'GPL', sans-serif
+		color: #fff
+		transition: .4s
+		&:hover
+			color: $pink
+	&_call
+		font-size: 14px
+		margin-top: 50px
+	&_number
+		font-size: 36px
+		margin: 0
+
+.footer
+	&_top
+		padding-top: 45px
+		padding-bottom: 35px
+		color: #fff
+		background-color: $bg
+	&_info
+		text-align: right
+		p
+			font-size: 14px
+		span
+			font-family: 'GPM', sans-serif
+			font-size: 24px
+	&_links
+		a
+			text-decoration: none
+			padding-bottom: 2px
+			border-bottom: 2px solid #fff
+			color: #fff
+			font-size: 18px
+			text-transform: uppercase
+			font-family: 'GPM', sans-serif
+			display: inline-block
+			transition: .2s
+			&:first-child
+				margin-right: 30px
+			&:hover
+				color: $pink
+	&_enjoy
+		margin-top: 30px
+		span
+			font-family: 'GPL', sans-serif
+			font-size: 16px
+			margin-right: 20px
+		a
+			text-decoration: none
+			display: inline-block
+			transition: .3s
+			&:hover
+				opacity: .6
+	&_bottom
+		padding: 40px 0
+		a
+			text-transform: uppercase
+			color: #111
+			span
+				font-weight: 900
+				color: $pink
+
+
+.overlay
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.5)
+	.popup
+		position: fixed
+		background: url('../img/popup_top.png') top -5% right -35px no-repeat, url('../img/popup_bottom.png') bottom left no-repeat
+		top: 150px
+		background-color: #f8f6f0
+		width: 520px
+		padding: 55px
+		left: 50%
+		margin-left: -260px
+		p
+			font-size: 16px
+			line-height: 1.4
+			font-family: 'GPL', sans-serif
+		h3
+			font-size: 24px
+			color: $pink
+			text-transform: uppercase
+		&_close
+			position: absolute
+			right: -60px
+			top: 0
+			img
+			background-color: #292929
+			display: inline-block
+			width: 40px
+			height: 40px
+			border-radius: 50%
+			cursor: pointer
+
+
+.overlay2
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.5)
+	.second
+		position: fixed
+		background: url('../img/popup_top.png') top -5% right -35px no-repeat, url('../img/popup_bottom.png') bottom left no-repeat
+		top: 150px
+		background-color: #f8f6f0
+		width: 520px
+		padding: 55px
+		left: 50%
+		text-align: center
+		margin-left: -260px
+		h3
+			text-transform: uppercase
+			font-size: 18px
+			padding-top: 10px
+			font-family: 'GPM', sans-serif
+		input
+			width: 80%
+			padding: 15px 5px
+			display: block
+			padding-left: 15px
+			margin-left: auto
+			margin-right: auto
+			border: none
+			background-color: $bg
+			color: #fff
+			margin-bottom: 20px
+			&::placeholder
+				color: $pink
+		button
+			border: none
+			color: $pink
+			background-color: transparent
+			background-color: $bg
+			padding: 10px 25px
+
+			border-radius: 5px
+			cursor: pointer
+		&_close
+			position: absolute
+			right: -60px
+			top: 0
+			img
+				background-color: #292929
+				display: inline-block
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				cursor: pointer
+
+
+
+
+
+@media(max-width: 1200px)
+	.feedback_slider
+		width: 740px
+	.feedback_text
+		width: 400px
+
+
+
+
+
+@media(max-width: 991.98px)
+	.feedback
+		h2
+			font-size: 24px
+	.header_slider
+		width: 85%
+	.feedback_slider
+		width: 80%
+		text-align: center
+	.feedback_text
+		text-align: center
+		width: 95%
+		margin-left: auto
+		margin-right: auto
+		font-size: 16px
+		margin-top: 25px
+		line-height: 1.2
+	.feedback_img
+		margin-left: auto
+		margin-right: auto
+		width: 180px
+		height: 180px
+	.feedback_prev
+		left: -30px
+		top: 75px
+	.feedback_next
+		right: -30px
+		top: 75px
+	.newBut
+		display: inline-block
+		text-align: center
+		width: 100%
+		border: none
+		margin-left: auto
+		margin-right: auto
+		margin-top: 40px
+	.feedback_features
+		margin-bottom: 80px
+
+
+
+
+
+
+
+@media(max-width: 767.98px)
+	.header
+		text-align: center
+		&_delivery
+			margin: 25px auto
+		&_main
+			padding-top: 30px
+			h1
+				font-size: 24px
+		&_subtitle
+			font-size: 14px
+			width: 70%
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 40px
+		&_slider
+			margin-bottom: 40px
+		&_exclusive
+			font-size: 18px
+	.help
+		h3
+			font-size: 22px
+			width: 95%
+			margin-left: auto
+			margin-right: auto
+		a
+			font-size: 14px
+			display: inline-block
+		&_call
+			margin-top: 10px
+		&_number
+			font-size: 28px
+	.footer
+		text-align: center
+		&_info
+			text-align: center
+	.customize
+		h2
+			font-size: 22px
+		&_subtitle
+			font-size: 16px
+	section
+		padding: 55px 0
+	.overlay
+		.popup
+			top: 70px
+			width: 320px
+			margin-left: -140px
+			text-align: center
+			padding: 15px
+			p
+				font-size: 16px
+			&_close
+				right: -45px
+
+	.overlay2
+		.second
+			position: fixed
+			background: url('../img/popup_top.png') top -5% right -35px no-repeat, url('../img/popup_bottom.png') bottom left no-repeat
+			top: 70px
+			background-color: #f8f6f0
+			width: 360px
+			padding: 55px
+			left: 50%
+			margin-left: -180px
+			input
+				width: 100%
+			&_close
+				right: -40px
+				img
+					width: 30px
+					height: 30px
+
+@media(max-width: 479.98px)
+	.overlay2
+		.second
+			position: fixed
+			background: url('../img/popup_top.png') top -5% right -35px no-repeat, url('../img/popup_bottom.png') bottom left no-repeat
+			top: 70px
+			background-color: #f8f6f0
+			width: 240px
+			padding: 20px
+			left: 50%
+			margin-left: -120px
+			input
+				width: 100%
+			&_close
+				right: -30px
+				img
+					width: 20px
+					height: 20px
+
+
+
+
+
+	.bucket
+		padding: 15px 40px
+
+
+@media(max-width: 575.98px)
+	.header_slider
+		width: 200px
+	.overlay
+		.popup
+			background-image: none
+			top: 40px
+			width: 220px
+			margin-left: -120px
+			text-align: center
+			padding: 15px
+			line-height: 1
+			p
+				font-size: 16px
+				line-height: 1.2
+				padding: 10px
+	.overlay
+		.popup
+			position: fixed
+			background: url('../img/popup_top.png') top -5% right -35px no-repeat, url('../img/popup_bottom.png') bottom left no-repeat
+			top: 40px
+			background-color: #f8f6f0
+			width: 240px
+			padding: 20px
+			left: 50%
+			margin-left: -120px
+			input
+				width: 100%
+			&_close
+				right: -30px
+				width: 20px
+				height: 20px
+				img
+					height: 20px
+					width: 20px

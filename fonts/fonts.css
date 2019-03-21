@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "GPL";
+  src: url("fonts/GothaProLig.eot"); /* IE9 Compat Modes */
+  src: url("fonts/GothaProLig.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("fonts/GothaProLig.otf") format("opentype"), /* Open Type Font */
+    url("fonts/GothaProLig.svg") format("svg"), /* Legacy iOS */
+    url("fonts/GothaProLig.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("fonts/GothaProLig.woff") format("woff"), /* Modern Browsers */
+    url("fonts/GothaProLig.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GPM";
+  src: url("fonts/GothaProMed.eot"); /* IE9 Compat Modes */
+  src: url("fonts/GothaProMed.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("fonts/GothaProMed.otf") format("opentype"), /* Open Type Font */
+    url("fonts/GothaProMed.svg") format("svg"), /* Legacy iOS */
+    url("fonts/GothaProMed.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("fonts/GothaProMed.woff") format("woff"), /* Modern Browsers */
+    url("fonts/GothaProMed.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GP";
+  src: url("fonts/GothaProReg.eot"); /* IE9 Compat Modes */
+  src: url("fonts/GothaProReg.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("fonts/GothaProReg.otf") format("opentype"), /* Open Type Font */
+    url("fonts/GothaProReg.svg") format("svg"), /* Legacy iOS */
+    url("fonts/GothaProReg.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("fonts/GothaProReg.woff") format("woff"), /* Modern Browsers */
+    url("fonts/GothaProReg.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
